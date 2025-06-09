@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Release Calendar</title>
+
+    <!-- Google Fonts: Lora for headings, Montserrat for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Our Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Movie Release Calendar</h1>
+            <p>Select a date to discover the movies released.</p>
+            <input type="date" id="date-selector">
+        </div>
+    </header>
+
+    <main>
+        <h2 id="results-title"></h2>
+        
+        <div id="loader" class="loader hidden"></div>
+
+        <div id="movie-grid"></div>
+
+        <p id="no-results" class="hidden">No movies found in our database for this date.</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
